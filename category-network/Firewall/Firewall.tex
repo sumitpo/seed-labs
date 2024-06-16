@@ -19,7 +19,7 @@
 \newcommand{\firewallFigs}{./Figs}
 \lhead{\bfseries SEED Labs -- Firewall Exploration Lab}
 
-\newcommand{\pointleft}[1]{\reflectbox{\ding{217}} \textbf{\texttt{#1}}}
+\newcommand{\pointLeft}[1]{\reflectbox{\ding{217}} \textbf{\texttt{#1}}}
 
 \begin{document}
 
@@ -664,8 +664,8 @@ each rule.
 \begin{lstlisting}
 iptables -A INPUT  -p icmp --icmp-type echo-request -j ACCEPT
 iptables -A OUTPUT -p icmp --icmp-type echo-reply   -j ACCEPT
-iptables -P OUTPUT DROP     (*@\pointleft{Set default rule for OUTPUT}@*)
-iptables -P INPUT  DROP     (*@\pointleft{Set default rule for INPUT}@*)
+iptables -P OUTPUT DROP     (*@\pointLeft{Set default rule for OUTPUT}@*)
+iptables -P INPUT  DROP     (*@\pointLeft{Set default rule for INPUT}@*)
 \end{lstlisting}
  
 
